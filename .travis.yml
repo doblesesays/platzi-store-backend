@@ -1,0 +1,26 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+node_js: - '12'
+git:
+  depth: 3
+script:
+  - yarn test
+notifications:
+  slack: develop-kac7263:nTJqKf2evRpvTLbxdS4kXn0e
+  email:
+    recipients:
+      - genesis.jz.93@gmail.com
+      - doblesesays@outlook.com
+    on_success: always
+    on_failure:  always
+deploy:
+  provider: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 2ab5fafb-72d8-47b6-88e4-293ccd23c8fe
+  app: platzi-store-backend-traviisci
+  on:
+    repo: doblesesays/platzi-store-backend

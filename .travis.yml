@@ -10,7 +10,8 @@ git:
 script:
   - yarn test
 notifications:
-  slack: develop-kac7263:nTJqKf2evRpvTLbxdS4kXn0e
+  slack:
+    secure: "ALpQzPSTH5Rwy6brg3ts0zwfQ8Zq2qmMb496iFGYyfoAvOVWuy8D1NrNp6EIs/WONlVUXosey8vYOGj1gksy3K4RbWDs2CGoZYRhtRtrG8S8HWnEVpkTQg4NyCY16xd8ancF2LAPi9e73vfFjzSmf8ec2gqvM6o0Jq6Jnkh9A8VnisSRbsGL9Fx7BpHPzOGF5iMMtukjSbJK3Lmlerzx2IP5CNWKzVSUcmF4/Vcs+KJ3JJnw9aus0iN3EGc/82a0UQVdEYB4+2DRyY0HsvHRK7du511ZWvv/zMUuhtRE3HYQQq8tDS6BALzIFKq/nSIsocvn3MwLktrYS8HtLlRZXvywzJcdTAvqVcx2DNFH2EwUgiBnhBY4xLz3M1NMfrPoVC4Zgo7+cbgNBy7/xl2KDIIcJIGa1Bo7pcyuTZjrfut4QWQ8ijcX81KitA5+APYVKXgOR3dQOYzOC9GLdD94tNcaG6YWlMyfA0VYPC0ExXZx/iC/61icazhrRbugLLzpT5zoVFtdAmFpkdKCCGus39wC0ncpuMdTSiZ/YpM3vIOaob8tIi0resD2XBKtj9ZF18ZKNveISv4Jy6Mt46B3kOdzaX+jImJgZysAhxTy9fWfGHA0JMm0fnuq3fA0lM5AVFKMw7XsEu5215Q6JRSlbjOIc9WF7WbwRoxfkFIh1Pg="
   email:
     recipients:
       - genesis.jz.93@gmail.com
@@ -23,7 +24,8 @@ deploy:
   provider: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 2ab5fafb-72d8-47b6-88e4-293ccd23c8fe
+  api_key:
+    secure: "LnhOck4PRIA+84k0/ipEtAxRtvQrliQXpT05pGjDjaDgcvLahLt7x2J1DPrEx5UIYh3P12T7VJbbjlxb7zXvpiFUcJcxC4sPgARKVcDHeTsbfoM3hsTYEvhhznN+hK7mBEL3omhrsKqiAPOhPnx6e//fsk0CG5sMUzyUALp8tuLTaAO5kmVNB1K0tn5+eltohQBwjQ1qmXirDwe08uaObbyVbjYxxz7ZFkLDKt9gQYdKclymD/UcCfqmADtTMx/Ffq8oFLCm4Ps3xyCU3Vu+WfcieR9aQk/Dg8ubS5d72DvVdWp/8SYVIw+C/RgfidqUOlwVsIZokJwDowBG/D3Vjsgvmf4H4mgbpZlMVGh3WKGzZM6te8Ud1xw91OGpHVS2lL0R0sHLxgOVLA+SWGPxyaajr64Bm82P2/aaN07+Ttk8W+UM5W4Dc84Sk71wMCmaOIADYMgfDMx6Tmv7jBvPecbTwP6IEdNVbCBlC8m2PrJxTd0yJf1wI7sTRP6m6yh/dZAnELaoT4AjYDZK9oP8JgtFurCT8Ck1/TZG5N49zETSt0dPj2HAQSUgaJ8phBDndGx49NkLZM0lQFXw5k7/PKXrgJLtCPN+Ub9OJ0E+LnDjuC17pJZ96lZGD4aAxKI64bQqAkbYEBjZykLFxS+B7By5AEjKAQ3eF+WeZM8NCEI="
   app: platzi-store-backend-traviisci
   on:
     repo: doblesesays/platzi-store-backend
